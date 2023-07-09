@@ -398,7 +398,7 @@ img {
   height: 100%;
 }
 
-.checkbox:checked + .privacy  {
+input:checked + span  {
   background-color:#404bbf;
   border: none;
   fill: #F4F4FD;
