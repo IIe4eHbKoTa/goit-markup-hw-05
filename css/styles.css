@@ -328,9 +328,6 @@ img {
 
 
 
-.label-last {
-  margin: 0;
-}
 
 .modal-input {
   width: 100%;
@@ -401,7 +398,7 @@ img {
   height: 100%;
 }
 
-.checkbox:checked + .checkbox-text .checkbox-icon {
+input[type="checkbox"]:checked + .checkbox-text .checkbox-icon {
   background-color:#404bbf;
   border: none;
   fill: #F4F4FD;
@@ -479,7 +476,6 @@ img {
 .modal-input:hover + .modal-icon,
 .modal-input:focus + .modal-icon {
   fill: #4D5AE5;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
