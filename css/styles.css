@@ -398,7 +398,13 @@ img {
   height: 100%;
 }
 
-input:checked + .checkbox-text .checkbox-icon {
+.checkbox:checked + .privacy  {
+  background-color:#404bbf;
+  border: none;
+  fill: #F4F4FD;
+}
+
+.checkbox:checked + .checkbox-text .checkbox-icon {
   background-color:#404bbf;
   border: none;
   fill: #F4F4FD;
