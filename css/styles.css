@@ -398,7 +398,7 @@ img {
   height: 100%;
 }
 
-input[type="checkbox"]:checked + .checkbox-text .checkbox-icon {
+input:checked + .checkbox-text .checkbox-icon {
   background-color:#404bbf;
   border: none;
   fill: #F4F4FD;
