@@ -104,6 +104,25 @@ img {
   padding-bottom: 26px;
 }
 
+.pages:hover::after {
+  position: relative;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
+
+.pages:hover{
+  position: relative;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
 .header-adress .list {
   display: flex;
   gap: 40px;
@@ -394,15 +413,23 @@ img {
 }
 
 .checkbox-icon {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
-.checkbox:checked + .checkbox-text .privacy {
+.checkbox:checked + .checkbox-text .privacy{
+  border: none;
+  background-color:#404bbf;
+  fill: #F4F4FD;
+}
+
+.checkbox:focus + .checkbox-text .privacy{
   background-color:#404bbf;
   border: none;
   fill: #F4F4FD;
 }
+
+
 
 .checkbox-text {
   color: #8E8F99;
@@ -411,7 +438,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em; 
   cursor: pointer;
+  
+  display: flex;
+  align-self: baseline;
+  gap: 8px;
 }
+
 
 .checkbox-link {
   color: #4d5ae5;
@@ -431,7 +463,8 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  margin-right: 8px;
+  
+
 }
 
 .send-button{
